@@ -53,22 +53,6 @@ app.post("/mokepon/:jugadorId", (req, res) => {
   res.end()
 })
 
-/*app.post("/mokepon/:jugadorId/posicion", (req, res) => {
-
-  const jugadorId = req.params.jugadorId || ""
-  const x = req.body.x || 0
-  const y = req.body.y || 0 
-  const jugadorIndex = jugadores.findIndex((jugador) => jugadorId === jugador.id)
-
-  if (jugadorIndex >= 0) {
-    jugadores[jugadorIndex].  actualizarPosicion(x, y)
-  }
-   res.end()
-   
-  //const enemigos = jugadores.filter((jugador) => jugadorId !== jugador.id)
-  //res.send({ enemigos })
-
-})*/
 
 app.listen(8080, () => {
   console.log("Servidor funcionando")
